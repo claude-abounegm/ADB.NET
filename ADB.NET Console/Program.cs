@@ -13,9 +13,6 @@ namespace ADBNET_Console
 
         static void Main(string[] args)
         {
-            Console.WriteLine("{0}", Marshal.SizeOf(typeof(Point)));
-            return;
-
             ADB.Connect(IPAddress.Parse("10.1.112.48"));
             PrintDevices();
 
